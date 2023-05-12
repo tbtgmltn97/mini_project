@@ -59,6 +59,14 @@
             <div class="container px-4 px-lg-5">
                 <div class="content-section-heading">
                     <h2 class="mb-5">닮은꼴을 찾아보자</h2>
+            <div class="sidebar">
+            <h3>Top Posts</h3>
+            <ul>
+                {% for post in posts %}
+                    <li><a href="{{ post.get_absolute_url }}">{{ post.title }}</a></li>
+                {% endfor %}
+            </ul>
+        </div>
                 </div>
                 <div class="row gx-4 gx-lg-5">
                     <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
