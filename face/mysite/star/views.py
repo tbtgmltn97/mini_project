@@ -26,6 +26,8 @@ def classify_image(request):
         except Exception as e:
             results.append(str(e))
     
-    # 결과를 템플릿으로 전달하여 표시
-    return render(request, 'result.html', {'results': results})
+    # 결과 값을 prediction 변수에 할당
+    prediction = ', '.join(results)
     
+    # 결과를 템플릿으로 전달하여 표시
+    return render(request, 'result.html', {'results': prediction})
