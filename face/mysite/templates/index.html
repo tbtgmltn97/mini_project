@@ -18,36 +18,22 @@
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="{% static 'css/styles.css'%}" rel="stylesheet" />
     </head>
-<<<<<<< HEAD
     <body id="resemble">
-=======
-    <body id="page-top">
->>>>>>> 7398f8d8c598877a0453cff2d9e98148efa5c528
         <!-- Navigation-->
         <a class="menu-toggle rounded" href="#"><i class="fas fa-bars"></i></a>
         <nav id="sidebar-wrapper">
             <ul class="sidebar-nav">
-<<<<<<< HEAD
                 <li class="sidebar-brand">목록</li>
                 <li class="sidebar-nav-item"><a href="#resemble">닮은꼴 찾기</a></li>
                 <li class="sidebar-nav-item"><a href="#about">결과</a></li>
                 <li class="sidebar-nav-item"><a href="#ranking">랭킹</a></li>
                 <li class="sidebar-nav-item"><a href="#how">구현 방법</a></li>
                 <li class="sidebar-nav-item"><a href="#contact">3조 인원</a></li>
-=======
-                <li class="sidebar-brand"><a href="#page-top">Start Bootstrap</a></li>
-                <li class="sidebar-nav-item"><a href="#page-top">Home</a></li>
-                <li class="sidebar-nav-item"><a href="#about">About</a></li>
-                <li class="sidebar-nav-item"><a href="#services">Services</a></li>
-                <li class="sidebar-nav-item"><a href="#portfolio">Portfolio</a></li>
-                <li class="sidebar-nav-item"><a href="#contact">Contact</a></li>
->>>>>>> 7398f8d8c598877a0453cff2d9e98148efa5c528
             </ul>
         </nav>
         <!-- Header-->
         <header class="masthead d-flex align-items-center">
             <div class="container px-4 px-lg-5 text-center">
-<<<<<<< HEAD
                 <h1 class="mb-1">3조 portfolio</h1>
                 <h3 class="mb-5"><em>닮은꼴 찾기</em></h3>
                 <a class="btn btn-primary btn-xl" href="#about">시작</a>
@@ -55,13 +41,6 @@
             
         </header>
 
-=======
-                <h1 class="mb-1"> Portfolio</h1>
-                <h3 class="mb-5"><em>허허허허 배부르다 </em></h3>
-                <a class="btn btn-primary btn-xl" href="#about">Find Out More</a>
-            </div>
-        </header>
->>>>>>> 7398f8d8c598877a0453cff2d9e98148efa5c528
         <!-- About-->
         <section class="content-section bg-light" id="about">
             <div class="container px-4 px-lg-5 text-center">
@@ -72,6 +51,7 @@
                         <p class="lead mb-5">
                             가보자아잇!
                         </p>
+<<<<<<< HEAD
 =======
                         <h2>Stylish Portfolio is the perfect theme for your next project!</h2>
                         <p class="lead mb-5">
@@ -81,6 +61,22 @@
                         </p>
                         <a class="btn btn-dark btn-xl" href="#services">What We Offer</a>
 >>>>>>> 7398f8d8c598877a0453cff2d9e98148efa5c528
+=======
+                        <head>
+	<meta charset="UTF-8">
+	<title>이미지 분류</title>
+</head>
+<body>
+	<h1>이미지 분류</h1>
+	<form method="post" enctype="multipart/form-data">
+		{% csrf_token %}
+		<label for="image_file">이미지 파일 선택:</label>
+		<input type="file" name="image_file" id="image_file">
+		<br>
+		<input type="submit" value="분류하기">
+	</form>
+</body>
+>>>>>>> f3270bbbe7170bc830e581210418e28c46843b58
                     </div>
                 </div>
             </div>
@@ -230,12 +226,6 @@
                 <a class="btn btn-xl btn-dark" href="#!">Look at Me!</a>
             </div>
         </section>
-        <!-- Map-->
-        <div class="map" id="contact">
-            <iframe src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A&amp;output=embed"></iframe>
-            <br />
-            <small><a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A"></a></small>
-        </div>
         <!-- Footer-->
         <footer class="footer text-center">
             <div class="container px-4 px-lg-5">
