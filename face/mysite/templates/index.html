@@ -50,6 +50,20 @@
                         <p class="lead mb-5">
                             가보자아잇!
                         </p>
+                        <head>
+	<meta charset="UTF-8">
+	<title>이미지 분류</title>
+</head>
+<body>
+	<h1>이미지 분류</h1>
+	<form method="post" enctype="multipart/form-data">
+		{% csrf_token %}
+		<label for="image_file">이미지 파일 선택:</label>
+		<input type="file" name="image_file" id="image_file">
+		<br>
+		<input type="submit" value="분류하기">
+	</form>
+</body>
                     </div>
                 </div>
             </div>
@@ -151,12 +165,6 @@
                 <a class="btn btn-xl btn-dark" href="#!">Look at Me!</a>
             </div>
         </section>
-        <!-- Map-->
-        <div class="map" id="contact">
-            <iframe src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A&amp;output=embed"></iframe>
-            <br />
-            <small><a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A"></a></small>
-        </div>
         <!-- Footer-->
         <footer class="footer text-center">
             <div class="container px-4 px-lg-5">

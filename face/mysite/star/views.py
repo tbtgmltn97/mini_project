@@ -17,10 +17,15 @@ def classify_image(request):
     image_paths = [os.path.join(image_dir, f) for f in os.listdir(image_dir) if f.endswith('.jpg')]
     
     # 이미지 분류 작업 처리 코드
+    results = []
     for image_path in image_paths:
-        image = Image.open(image_path)
-        result = image_classify.classify(image)
-        print(result)
+        try:
+            with Image.open(image_path) as image:
+                result = image_classify.classify(image)
+                results.append(result)
+        except Exception as e:
+            results.append(str(e))
     
-    return HttpResponse("Image classification is done.")
+    # 결과를 템플릿으로 전달하여 표시
+    return render(request, 'result.html', {'results': results})
     
