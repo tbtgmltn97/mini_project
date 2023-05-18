@@ -7,11 +7,7 @@ from .forms import ImageUploadForm
 from .models import ImageClassifier
 import numpy as np
 import glob
-# Create your views here.
-def index(request):
-    posts = Post.objects.order_by('-views')[:5]
-    context = {'posts': posts}
-    return render(request, 'index.html', context)
+
 def classify_image(request):
     if request.method == 'POST':
         form = ImageUploadForm(request.POST, request.FILES)

@@ -46,6 +46,13 @@
     <img class="profile-image" src="{% static result.class_label|add:'.jpg' %}">
 
     <p><a href="http://127.0.0.1:8000/star/classify/" class="return-button">돌아가기</a></p>
+
+	<img class="profile-image" src="{% static 'DB.jpg' %}">
+	<h3>사이트에서 닮은 연예인의 결과가 자동으로 사용자의 아이디를 순차적인 숫자로 부여하고</h3>
+	<h3>닮은 연예인의 아이디와 닮은연예인의 이름과 그 연예인을 닮은 퍼센트를 result라는 테이블에 저장됩니다.</h3>
+	<h3>그리고 result 테이블의 고객아이디를 외래키로 받아서 result테이블에서 연예인을 기준으로 제일 많은 퍼센트로 닮은 사람의</h3>
+	<h3>아이디와 닮은 연예인의 이름과 닮은 퍼센트를 ranking이라는 테이블에 저장됩니다.</h3>
+
 </body>
 {% comment %} 
 <body>
